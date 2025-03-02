@@ -25,7 +25,7 @@ Its purpose is to:
   - for each available video format, display:
     * a brief summary of its attributes
     * _Start Media_ button to transfer the chosen media to an external player
-    * a grouping of icons to transfer the chosen media to various pages on the [Webcast-Reloaded](https://github.com/warren-bank/crx-webcast-reloaded) external [website](https://warren-bank.github.io/crx-webcast-reloaded/external_website/index.html)
+    * a grouping of icons to transfer the chosen media to various pages<br>on the [Webcast-Reloaded](https://github.com/warren-bank/crx-webcast-reloaded) external [website](https://warren-bank.github.io/crx-webcast-reloaded/external_website/index.html)
       - each of these pages provide tight integration with tools for media streams:
         * _Google Chromecast_
         * [_ExoAirPlayer_](https://github.com/warren-bank/Android-ExoPlayer-AirPlay-Receiver)
@@ -51,6 +51,11 @@ Its purpose is to:
   - a geo-fence requires that requests originate from an IP within the UK
   - login is _not_ required
   - _Referer_ request header is _not_ required
+
+#### Credits:
+
+* [my5-dl](https://github.com/Diazole/my5-dl) by [Sean Godsell](https://github.com/Diazole) is an _excellent_ Python script<br>that provides the methodology needed to make this project possible
+  - huge thanks!
 
 #### Legal:
 

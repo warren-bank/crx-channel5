@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         channel5
 // @description  Improve site usability. Watch videos in external player.
-// @version      1.0.0
+// @version      1.0.1
 // @match        *://*.channel5.com/*
 // @icon         https://www.channel5.com/favicon.ico
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js
@@ -627,34 +627,44 @@ var download_seasons_in_series = function(series_id, callback) {
 
 var download_film = function(film_id, callback) {
   download_json(
-    /* url= */ 'https://corona.channel5.com/shows/' + film_id + '.json?platform=my5desktop&friendly=1&linear=true&webpages=true',
+    /* url= */ 'https://corona.channel5.com/shows/' + film_id + '/episodes/next.json?platform=my5desktop&friendly=1',
     /* headers= */ null,
     /* data= */ null,
     /* withCredentials= */ false,
     function(error, api_data) {
       if (error) return
 
-      if (!api_data || (typeof api_data !== 'object') || !Array.isArray(api_data.transmissions) || !api_data.transmissions.length) return
+      if (!api_data || (typeof api_data !== 'object') || !api_data.id) return
 
-      api_data.transmissions = api_data.transmissions.filter(function(obj) {return obj && (typeof obj === 'object') && obj.episodeId})
-      if (!api_data.transmissions.length) return
+      if (!state.series.title && (api_data.title || api_data.sh_title)) {
+        state.series.title = api_data.title || api_data.sh_title
+      }
+      if (!state.series.summary && api_data.m_desc) {
+        state.series.summary = api_data.m_desc
+      }
 
-      var duration = (api_data.transmissions[0].start && api_data.transmissions[0].end)
+      var duration = (api_data.len)
+        ? convertSecondsToReadableString(
+            Math.floor(api_data.len / 1000)
+          )
+        : null
+
+      var expires = (api_data.vod_e)
         ? convertSecondsToReadableString(
             Math.floor((
-              (new Date(api_data.transmissions[0].end)).getTime() - (new Date(api_data.transmissions[0].start)).getTime()
+              (api_data.vod_e * 1000) - Date.now()
             ) / 1000)
           )
         : null
 
       var film = {
-        content_id:     api_data.transmissions[0].episodeId,
+        content_id:     api_data.id,
         season_number:  null,
         episode_number: null,
-        title:          api_data.title  || api_data.transmissions[0].showTitle || api_data.transmissions[0].episodeTitle,
-        summary:        api_data.m_desc || api_data.transmissions[0].description,
+        title:          api_data.title || api_data.sh_title,
+        summary:        api_data.m_desc,
         duration:       duration,
-        expires:        null
+        expires:        expires
       }
 
       callback(film)

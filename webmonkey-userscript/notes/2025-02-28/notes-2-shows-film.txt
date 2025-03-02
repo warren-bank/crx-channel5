@@ -55,3 +55,14 @@ response:
 ./data/2-shows-film/api-responses/3-corona-xanadu-season-1-episodes.json
 
 --------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/xanadu/episodes/next.json?platform=my5desktop&friendly=1'
+
+response:
+=========
+./data/2-shows-film/api-responses/4-corona-xanadu-next-episode.json
+
+--------------------------------------------------------------------------------
