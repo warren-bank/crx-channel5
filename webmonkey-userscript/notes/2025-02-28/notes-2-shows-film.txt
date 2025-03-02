@@ -1,0 +1,57 @@
+--------------------------------------------------------------------------------
+
+https://www.channel5.com/
+https://www.channel5.com/browse/Movies
+
+https://www.channel5.com/show/xanadu
+
+-------------------------------------------------------------------------------- before login:
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/xanadu.json?platform=my5desktop&friendly=1&linear=true&webpages=true'
+
+response:
+=========
+./data/2-shows-film/api-responses/1-corona-xanadu.json
+
+highlights:
+===========
+{
+  "genre": "Film",
+  "primary_vod_genre": "Movies",
+  "vod_subgenres": ["Movies"],
+  "standalone": true,
+
+  "title": "Xanadu",
+  "m_desc": "Musical. A struggling artist meets a girl who may hold the key to his happiness. ",
+
+  "transmissions": [{
+    "episodeId": "C5463760001",
+  }]
+}
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/xanadu/seasons.json?platform=my5desktop&friendly=1'
+
+response:
+=========
+./data/2-shows-film/api-responses/2-corona-xanadu-seasons.json
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/xanadu/seasons/1/episodes.json?platform=my5desktop&friendly=1&linear=true'
+
+response:
+=========
+./data/2-shows-film/api-responses/3-corona-xanadu-season-1-episodes.json
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,172 @@
+--------------------------------------------------------------------------------
+
+https://www.channel5.com/
+https://www.channel5.com/browse/All%20Shows
+https://www.channel5.com/browse/Popular
+
+https://www.channel5.com/show/prodigal-son
+https://www.channel5.com/prodigal-son/season-1/pilot
+
+-------------------------------------------------------------------------------- after login:
+
+request:
+========
+
+curl 'https://cassie.channel5.com/platform/my5desktopng/config.json?label=3.6.5' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Origin: https://www.channel5.com' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.channel5.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'If-None-Match: W/"dc2d8a551f8e63e9a43a5e04e81bba3b"'
+
+response:
+=========
+./data/1-shows-series/api-responses/1-cassie-config.json
+
+interesting bits:
+=================
+    "coronaBaseUri": "https://corona.channel5.com",
+    "coronaShowSearchTemplateUri": "/shows/search.json?platform={platformId}&genre={genre}&ids[]={showIds}",
+    "coronaShowTemplateUri": "/shows/{showId}.json?platform={platformId}",
+    "coronaEPGChannelTemplateUri": "/channels/{channelId}/epg.json",
+    "coronaWatchableSearchTemplateUri": "/watchables/search.json?platform={platformId}&ids[]={watchableIds}",
+    "coronaWatchableTemplateUri": "/watchables/{watchableId}.json?platform={platformId}",
+    "coronaAllEpisodesByShowSeasonTemplateUri": "/shows/{showId}/seasons/{seasonId}/episodes.json?platform={platformId}",
+    "coronaAllSeasonsByShowTemplateUri": "/shows/{showId}/seasons.json?platform={platformId}",
+    "coronaShowAtoZTemplateUri": "/shows/atoz.json?platform={platformId}&genre={genre}",
+
+    "cassieBaseVODUrl": "https://cassie.channel5.com/api/v2/media",
+    "cassieBaseLiveUrl": "https://cassie.channel5.com/api/v2/live_media",
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/prodigal-son/seasons/season-1/episodes/pilot.json?platform=my5desktop&friendly=1&linear=true' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Origin: https://www.channel5.com' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.channel5.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'If-None-Match: W/"c20a6469c5e18201cee32a5e699b266e"'
+
+response:
+=========
+./data/1-shows-series/api-responses/2-corona-prodigal-son-season-1-episodes-pilot.json
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/prodigal-son.json?platform=my5desktop&friendly=1&linear=true&webpages=true' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Origin: https://www.channel5.com' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.channel5.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'If-None-Match: W/"ae717ffc7ddd132f974222b41af33370"'
+
+response:
+=========
+./data/1-shows-series/api-responses/3-corona-prodigal-son.json
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/prodigal-son/seasons.json?platform=my5desktop&friendly=1' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Origin: https://www.channel5.com' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.channel5.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'If-None-Match: W/"422c9c4c91e9f73adbac0db462be3084"'
+
+response:
+=========
+./data/1-shows-series/api-responses/4-corona-prodigal-son-seasons.json
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/shows/prodigal-son/seasons/1/episodes.json?platform=my5desktop&friendly=1&linear=true' \
+  --compressed \
+  -H 'User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:109.0) Gecko/20100101 Firefox/115.0' \
+  -H 'Accept: application/json, text/plain, */*' \
+  -H 'Accept-Language: en-US,en;q=0.5' \
+  -H 'Accept-Encoding: gzip, deflate, br' \
+  -H 'Origin: https://www.channel5.com' \
+  -H 'DNT: 1' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://www.channel5.com/' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'If-None-Match: W/"90f28316cb214c0a5188fe1318b39534"'
+
+response:
+=========
+./data/1-shows-series/api-responses/5-corona-prodigal-son-season-1-episodes.json
+
+--------------------------------------------------------------------------------
+
+https://github.com/stabbedbybrick/freevine/blob/main/services/channel5/api.yaml
+https://github.com/stabbedbybrick/freevine/blob/main/services/channel5/channel5.py
+
+https://github.com/Diazole/my5-dl
+https://github.com/Diazole/my5-dl/blob/main/config.py
+https://github.com/Diazole/my5-dl/blob/main/my5-dl.py
+https://github.com/Diazole/my5-dl/blob/main/keys/retrieve-keys.html
+
+notes:
+  * wow!.. this programmer is GOOD
+
+  * I migrated some of his code from Python to JS:
+      ./utils/1-get_keys
+      ./utils/2-get_content_response
+    and ran a few tests..
+    - file:
+        ./data/1-shows-series/utils/get_content_response/logs/debug-4.log
+    - contains:
+        video URLs
+        DRM license server URLs
+    - each such pair of URLs does successfully play in an external video player!
+
+  * the external .vtt tracks are for thumbnails
+    - video URL streams include internal subtitle track(s)
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,8 @@
+{
+  "seasons": [{
+    "seasonNumber": "1",
+    "numberOfEpisodes": 20,
+    "sea_f_name": "season-1",
+    "seasonUseTitleImg": true
+  }]
+}

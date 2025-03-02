@@ -1,0 +1,80 @@
+decrypted content_response: {
+  "id": "C5492300001",
+  "assets": [
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            160,
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akahls1.akamaized.net/fps/C5492300001/C5492300001A/20250221185530/C5492300001A.m3u8"
+        }
+      ],
+      "profile": "fpshls1",
+      "drm": "fairplay",
+      "keyserver": "https://cassie.channel5.com/api/v2/licences/fairplay/220/C5492300001?expiry=1740992765&tag=39343038303432386436363937313534383238626538326563346538356265376430353736646438",
+      "version": "A",
+      "subtitled": true,
+      "thumbnailsurl": "https://akathumbnails.channel5.com/C5492300001A/thumbnails.vtt",
+      "audiodescribed": false,
+      "duration": 2614
+    },
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            160,
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akadash0.akamaized.net/hydra/C5492300001/C5492300001A/20250221194333/C5492300001_SD-tt.mpd"
+        }
+      ],
+      "profile": "dash4",
+      "drm": "widevine",
+      "keyserver": "https://cassie.channel5.com/api/v2/licences/widevine/491/C5492300001?expiry=1740917165&tag=61636233623965303332626131623865653534653663656534613862376232353165623030346533",
+      "version": "A",
+      "subtitled": true,
+      "thumbnailsurl": "https://akathumbnails.channel5.com/C5492300001A/thumbnails.vtt",
+      "audiodescribed": false,
+      "duration": 2613
+    },
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            160,
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akadash0.akamaized.net/hydra/C5492300001/C5492300001A/20250221194333/C5492300001_SD-tt.mpd"
+        }
+      ],
+      "profile": "dash4",
+      "drm": "playready",
+      "keyserver": "https://playreadydrm.channel5.com/v2/rightsmanager.asmx?x=Zjg4YmQ1ZWQtMzg3My00ODNiLWIxNDAtYmQ5ZmFhY2ZmYWY4OzAyLzAzLzIwMjUgMTI6MDY6MDU7eStJOTBTUTRBYktRSk4vY2ZIT2VxdUJQU0tvVXYwQzF6dXhvczR4QzZVaz07SFlEUkEtSVNPREFTSC1TTDIwMDA%3D",
+      "version": "A",
+      "subtitled": true,
+      "thumbnailsurl": "https://akathumbnails.channel5.com/C5492300001A/thumbnails.vtt",
+      "audiodescribed": false,
+      "duration": 2613
+    }
+  ]
+}

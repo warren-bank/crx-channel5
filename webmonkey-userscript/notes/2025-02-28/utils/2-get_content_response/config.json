@@ -1,0 +1,10 @@
+{
+  "APP_NAME": "my5desktopng",
+  "BASE_URL_MEDIA": "https://cassie.channel5.com/api/v2/media",
+  "BASE_URL_LIVE_MEDIA": "https://cassie.channel5.com/api/v2/live_media",
+  "DEFAULT_JSON_HEADERS": {
+    "Content-type": "application/json",
+    "Accept": "*/*",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+  }
+}

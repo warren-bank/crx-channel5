@@ -1,0 +1,66 @@
+decrypted content_response: {
+  "id": "C5",
+  "livestreamtype": "standard",
+  "assets": [
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akahlslive-c5.akamaized.net/out/v1/70624293df14497f873b6a0503661eac/index.m3u8"
+        }
+      ],
+      "profile": "hlsfpslive1",
+      "drm": "fairplay",
+      "keyserver": "https://cassie.channel5.com/api/v2/licences/fairplay/364/C5?expiry=1740992862&tag=65626266633937616266663635386166643531613863396361353239643238626331396465386639",
+      "offset": 0
+    },
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akadashlive-c5.akamaized.net/out/v1/07646f4532504e45a2a8647f59372d1c/index.mpd"
+        }
+      ],
+      "profile": "dashwvslive1",
+      "drm": "widevine",
+      "keyserver": "https://cassie.channel5.com/api/v2/licences/widevine/365/C5?expiry=1740917262&tag=31373865346365373065386435326334383234376432303466333265343033393734323334396365",
+      "offset": 0
+    },
+    {
+      "renditions": [
+        {
+          "renditionid": 0,
+          "format": "SD",
+          "bitrates": [
+            360,
+            480,
+            800,
+            1200,
+            1500
+          ],
+          "url": "https://akadashlive-c5.akamaized.net/out/v1/8f0147c7bd8044e0a336ea7489b0ab6c/index.mpd"
+        }
+      ],
+      "profile": "dashplslive1",
+      "drm": "playready",
+      "keyserver": "https://playreadydrm.channel5.com/v2/rightsmanager.asmx?x=YTdiNjZjZjktMTIwMy00M2FjLTk1ZGEtYjQyNGVjMjQ2NTRlOzAyLzAzLzIwMjUgMDk6MTI6NDI7dVAvdlNFQWE3YTBVMStKMG1oSUE3M096dUZVM1d4WjQwLzhsbnpEYWdRND07R2VuZXJhbExpdmU%3D",
+      "offset": 0
+    }
+  ]
+}

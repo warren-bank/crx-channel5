@@ -1,0 +1,545 @@
+{
+  "onboardingVersion": 1,
+  "migrationOriginDomain": "https://www.my5.tv",
+  "migrationTargetDomain": "https://www.channel5.com",
+  "commVersion": 1,
+  "systemMessages": {
+    "policies": {
+      "text1": "5 and its partners rely on cookies and similar technologies to understand how you use our services and to enhance your experience as described in <a href='https://privacy.paramount.com/en/policy' target='_blank'/>Privacy Policy</a> and <a href='https://privacy.paramount.com/en/policy#cookies-and-other-tracking-technologies' target='_blank'/>Cookies Policy</a> .<br /><br />To further enhance your experience, please click on Accept to agree to the use of cookies for 'targeted’ advertising or Edit Choices to manage your cookie preferences.",
+      "button1": "Accept All",
+      "button2": "Edit Choices",
+      "text2": "",
+      "version": 1,
+      "focusButton1": true,
+      "consentText": "5 and its partners use cookies and similar technologies to store in your device to personalise your experience and be able to serve you with more relevant ('targeted') advertising.<br /><br />For detailed information about how we use the data we store, you can read our <a href='https://privacy.paramount.com/en/policy' target='_blank'/>Privacy Policy</a> and <a href='https://privacy.paramount.com/en/policy#cookies-and-other-tracking-technologies' target='_blank'/>Cookies Policy.",
+      "cookiesSubtitle": "Choose your preferences below",
+      "cookiesText": "We'd like to store cookies on your device to be able to serve you with more relevant 'targeted' advertising – please let us know if you consent to the use of cookies for this purpose by clicking 'Yes' or 'No' below.",
+      "cookiesButton1": "Yes",
+      "cookiesButton2": "No",
+      "policyButton": "Privacy & Cookies",
+      "policyUrl": "https://privacy.paramount.com/en/policy",
+      "cookiesButton3": "Save",
+      "accessibilityText": "5 is committed to making its products accessible to the widest possible audience, regardless of technology or ability.<br /><br />The 5 website has been reviewed and attained AA conformity status for use with keyboard and screen readers, in line with Web Content Accessibility Guidelines (WCAG). <br /><br />If you have any feedback or suggestions about accessibility, please contact our viewer enquiries team on 020 3580 3600 or 03457 050505 or e-mail them on <a href='mailto:viewerenquiries@channel5.com'>viewerenquiries@channel5.com</a>",
+      "registerConfirmation": "I confirm I have read and accept the <a href='https://www.channel5.com/terms-and-conditions/' target='_blank'/>Terms & Conditions</a>."
+    },
+    "announcements": {
+      "announcementsText": "We’ve made some improvements to the 5 website and as a result you will need to sign-in again in order to access your personalised recommendations, watch history, search history, add shows to My List, and manage your 5 account. You can visit our 5 Help centre for information about these improvements and how to reset your password and sign-in: <a href='https://help.channel5.com' target='_blank'>help.channel5.com</a>",
+      "announcementButton1": "Continue",
+      "announcementButton2": "",
+      "version": 2,
+      "focusButton1": true
+    },
+    "accountSettings": {
+      "sectionTitleHistory": "My history",
+      "buttonWatch": "Clear watch history",
+      "buttonSearch": "Clear search history",
+      "buttonRecs": "Clear recommendations",
+      "buttonSignIn": "Sign-in / Register",
+      "sectionTitle": "Parental Controls",
+      "buttonSetup": "Setup a Parental PIN",
+      "buttonChange": "Change Parental PIN"
+    },
+    "accessibilitySettings": {
+      "checkboxSubtitles": "Show subtitles if available",
+      "checkboxAudio": "Play audio description if available",
+      "description": "5 is committed to making its products accessible to the widest possible audience, regardless of technology or ability.<br /><br />The 5 website has been reviewed and attained AA conformity status for use with keyboard and screen readers, in line with Web Content Accessibility Guidelines (WCAG). <br /><br />If you have any feedback or suggestions about accessibility, please contact our viewer enquiries team on 020 3580 3600 or 03457 050505 or e-mail them on <a href='mailto:viewerenquiries@channel5.com'>viewerenquiries@channel5.com</a>"
+    },
+    "consentSettings": {
+      "consentText": "5 and its partners use cookies and similar technologies to store in your device to personalise your experience and be able to serve you with more relevant ('targeted') advertising.<br /><br />For detailed information about how we use the data we store, you can read <a href='https://privacy.paramount.com/en/policy' target='_blank'/>Privacy Policy</a> and <a href='https://privacy.paramount.com/en/policy#cookies-and-other-tracking-technologies' target='_blank'/>Cookies Policy.",
+      "cookiesSubtitle": "Choose your preferences below",
+      "cookiesText": "We'd like to store cookies on your device to be able to serve you with more relevant 'targeted' advertising – please let us know if you consent to the use of cookies for this purpose by clicking 'Yes' or 'No' below.",
+      "cookiesButton1": "Yes",
+      "cookiesButton2": "No",
+      "policyButton": "Privacy & Cookies",
+      "policyUrl": "https://privacy.paramount.com/en/policy",
+      "cookiesButton3": "Save"
+    },
+    "marketingConsentmodal": {
+      "modalTitle": "Want to get more out of 5?",
+      "modalCopy": "We'd love to keep in touch! Just let us know your preferences below.",
+      "Channel5AndMy5Text": "Get the best out of 5 and My5 with personalised show recommendations and latest feature announcements.",
+      "viacomcbsText": "Get exclusive, carefully-curated offers and promotions from our Paramount family of brands including MTV, Comedy Central and Paramount.",
+      "communicationButton1": "Confirm",
+      "communicationButton2": "Skip for now",
+      "modalpolicyLink": "Privacy Policy",
+      "modalpolicyUrl": "https://privacy.paramount.com/en/policy",
+      "modalcookiesLink": "Cookies Policy",
+      "modalcookiesUrl": "https://privacy.paramount.com/en/policy#cookies-and-other-tracking-technologies"
+    },
+    "marketingCommunicationsettings": {
+      "communicationText": "Want to get more out of 5? We'd love to keep in touch! Sign in to be able to change your preferences",
+      "communicationTextSignedIn": "Want to get more out of 5? We'd love to keep in touch! You can change your communications preferences by managing your consent settings below.  Please note any changes will take up to seven days to update.",
+      "ChannelAndMy5Panel": "Get the best out of 5 with personalised show recommendations and latest feature announcements.",
+      "viacomcbsPanel": "Get exclusive, carefully-curated offers and promotions from our Paramount family of brands including MTV, Comedy Central and Paramount. "
+    },
+    "marketingUnsubscribe": {
+      "unsubscribeText": "We hope you've enjoyed hearing from us and we’re sad to see you go, but if it's a break you need then we understand. You can change your communication preferences by managing your consent settings below. Please note any changes will take up to seven days to update. You can re-subscribe at any time, we'd love to have you back.",
+      "Channel5AndMy5Text": "Get the best out of 5 with personalised show recommendations and latest feature announcements.",
+      "viacomcbsText": "Get exclusive, carefully-curated offers and promotions from our Paramount family of brands including MTV, Comedy Central and Paramount. "
+    },
+    "geoRestriction": {
+      "copy1": "It looks like you are trying to access 5 app from outside the UK.",
+      "copy2": "5 app is currently only accessible from within the UK. \n\nError code: MY5-WEB-1111"
+    }
+  },
+  "dataServiceSettings": {
+    "platformId": "my5desktop",
+    "browsePageContent": "genre",
+    "ednaBaseUri": "https://feeds-api.channel5.com",
+    "ednaGenreNavCollectionId": "PLC_My5SubGenreBrowsePageSubNav",
+    "ednaMilkshakeBrowseSubNavCollectionId": "PLC_MilkshakeBrowsePageSubNav",
+    "ednaCollectionsTemplateUri": "/collections/{collectionId}/concise.json?vod_available={platformId}",
+    "ednaOnboardingImagesCollectionId": "PLC_My5DesktopOnboardingImages",
+    "ednaSignedCommunicationScreensCollectionId": "PLC_My5CommsScreenDesktop",
+    "ednaPrimaryNavCollectionId": "PLC_My5DesktopFASTPrimaryNav",
+    "ednaMilkshakePrimaryNavCollectionId": "PLC_My5DesktopMilkshakeSubNav",
+    "ednaMilkshakeFastPrimaryNavCollectionId": "PLC_My5DesktopFastMilkShakeSubNav",
+    "ednaMilkshakeHomePageSubNavCollectionId": "PLC_MilkshakeDesktopHomePageSubNav",
+    "ednaDesktopSearchCollectionId": "PLC_My5SearchNav",
+    "ednaDesktopHomeCollectionId": "PLC_My5DesktopFASTHomePageSubNav",
+    "ednaDesktopBrowseCollectionId": "PLC_My5DesktopBrowsePageSubNav",
+    "ednaChannelNavCollectionId": "PLC_My5ChannelsPageSubNav",
+    "ednaMy5FastLiveTvPageSubNav": "PLC_My5FASTLiveTVPageSubNav",
+    "ednaMy5FastKidsLiveTvPageSubNav": "PLC_My5FASTKidsLiveTVSubNav",
+    "ednaDesktopLiveTVCollectionId": "PLC_My5DesktopLiveTVSubNav",
+    "ednaTVGuideCollectionId": "PLC_My5DesktopTVGuideSubNav",
+    "ednaDesktopMyListCollectionId": "PLC_My5FavouritesNav",
+    "ednaDesktopSettingsCollectionId": "PLC_My5DesktopSettingsPageSubNav",
+    "ednaHeroCollectionId": "PLC_My5DesktopHeroRail",
+    "ednaCategoriesNavCollectionId": "PLC_My5DesktopCategoriesSubNav",
+    "ednaDesktopFeaturedCollectionId": "PLC_My5DesktopFeaturedRail",
+    "ednaExclusivesdCollectionId": "PLC_My5ExclusivesCarousel",
+    "ednaFooterCollectionId": "PLC_My5DesktopFooterNav",
+    "ednaCompetitionsCollectionId": "PLC_My5EditorialCompetitions",
+    "ednaSubNavDelimiterCollectionId": "PLC_My5SubNavDelimiter1",
+    "ednaContinueWatchingV2CollectionId": "PLC_My5ContinueWatchingRail",
+    "ednaContinueWatchingMilkShakeV2CollectionId": "PLC_My5ContinueWatchingMilkShakeKids",
+    "ednaDesktopRecommendationsCollectionId": "PLC_My5DesktopRecommendationsRail",
+    "ednaDesktopTopPicksCollectionId": "PLC_My5DesktopTopPicksCollection",
+    "ednaImagesTemplateUri": "https://api-images.channel5.com/otis/images/{type}/{id}/{resolution}.{fmt}?overlay={overlayType}&updated_at={time}",
+    "ednaNowNextFeedTemplateUri": "/feed/now-next/{channelId}.json",
+    "coronaBaseUri": "https://corona.channel5.com",
+    "coronaShowSearchTemplateUri": "/shows/search.json?platform={platformId}&genre={genre}&ids[]={showIds}",
+    "coronaShowTemplateUri": "/shows/{showId}.json?platform={platformId}",
+    "coronaEPGChannelTemplateUri": "/channels/{channelId}/epg.json",
+    "coronaWatchableSearchTemplateUri": "/watchables/search.json?platform={platformId}&ids[]={watchableIds}",
+    "coronaWatchableTemplateUri": "/watchables/{watchableId}.json?platform={platformId}",
+    "coronaAllEpisodesByShowSeasonTemplateUri": "/shows/{showId}/seasons/{seasonId}/episodes.json?platform={platformId}",
+    "coronaAllSeasonsByShowTemplateUri": "/shows/{showId}/seasons.json?platform={platformId}",
+    "coronaShowAtoZTemplateUri": "/shows/atoz.json?platform={platformId}&genre={genre}",
+    "watchableOverlayStatusText": [
+      {
+        "collection": "PLC_My5DesktopRecentlyAddedRail",
+        "text": "New",
+        "exclude": true
+      },
+      {
+        "collection": "PLC_My5BrowsePageRecentlyAdded",
+        "text": "New",
+        "exclude": true
+      },
+      {
+        "collection": "PLC_My5LastChanceRail",
+        "text": "Last Chance",
+        "color": "#f6f646"
+      },
+      {
+        "collection": "NextEpisode",
+        "text": "Next Episode",
+        "color": "#FF5ABD"
+      }
+    ],
+    "livetvoverlayStatusColour": [
+      {
+        "channel": "C5",
+        "name": "Channel 5",
+        "color": "#CCAD6B"
+      },
+      {
+        "channel": "C6",
+        "name": "5Star",
+        "color": "#5DCA6E"
+      },
+      {
+        "channel": "C7",
+        "name": "5USA",
+        "color": "#76B3A6"
+      },
+      {
+        "channel": "C8",
+        "name": "5Select",
+        "color": "#7EBAEB"
+      },
+      {
+        "channel": "C0",
+        "name": "5ACTION",
+        "color": "#FF3B01"
+      }
+    ],
+    "screenerCategorySettings": [
+      {
+        "categoryId": "documentary",
+        "categoryLabel": "Documentary",
+        "genre": "Documentary",
+        "collectionId": "PLC_My5ScreenerDocumentary"
+      },
+      {
+        "categoryId": "drama",
+        "categoryLabel": "Drama",
+        "genre": "Drama",
+        "collectionId": "PLC_My5ScreenerDrama"
+      },
+      {
+        "categoryId": "soap",
+        "categoryLabel": "Soap",
+        "genre": "Soap",
+        "collectionId": "PLC_My5ScreenerSoap"
+      },
+      {
+        "categoryId": "kids",
+        "categoryLabel": "Kids",
+        "genre": "milkshake!",
+        "collectionId": "PLC_My5ScreenerKids"
+      },
+      {
+        "categoryId": "film",
+        "categoryLabel": "Film",
+        "genre": "Film",
+        "collectionId": "PLC_My5ScreenerFilm"
+      },
+      {
+        "categoryId": "sport",
+        "categoryLabel": "Sport",
+        "genre": "Sport",
+        "collectionId": "PLC_My5ScreenerSport"
+      }
+    ],
+    "ednaSettingsMenuIds": {
+      "ednaAccountSettingsId": "PLC_My5DesktopAccountSettings",
+      "ednaAccessibilitySettingsId": "PLC_My5DesktopAccessibilitySettings",
+      "ednaConsentSettingsId": "PLC_My5DesktopConsentSettings",
+      "ednaCommunicationSettingsId": "PLC_My5DesktopCommunicationSettings",
+      "ednaAboutId": "PLC_My5DesktopAbout"
+    },
+    "userSortOptions": [
+      {
+        "collectionId": "PLC_My5BrowsePageRecentlyAdded",
+        "display": false
+      },
+      {
+        "collectionId": "PLC_My5BrowsePagePopular",
+        "display": false
+      },
+      {
+        "collectionId": "PLC_My5BrowsePageMy5Exclusives",
+        "display": false
+      }
+    ]
+  },
+  "appFeatureSettings": {
+    "noOnboarding": true,
+    "animation": true,
+    "noAnnouncement": true,
+    "appRefreshDuration": 86400,
+    "epgDaysLookBack": 2,
+    "epgDaysLookAhead": 3,
+    "enableScreenerForAll": false,
+    "adjustTrackingEnabled": false,
+    "sponsorshipLogoEnabled": true,
+    "oneTrustEnabled": true,
+    "oneTrustDomainScript": "33e5379c-21fb-470f-baed-d19216f7e163",
+    "mandatoryRegistration": true,
+    "useSSO": true,
+    "emailValidationEnabled": true,
+    "emailModalFreqDays": 1,
+    "displayBanner": true,
+    "bannerUrl": "https://channel5.com",
+    "bannerDimentions": {
+      "desktop": "1600x400",
+      "tablet": "780x260",
+      "mobile": "480x360"
+    },
+    "isMilkshakeMode": true,
+    "noCommsScreen": false,
+    "isMixmupsEnabled": false
+  },
+  "userServiceSettings": {
+    "sdkUrl": "https://userservice.channel5.com/html/desktop/user-service-sdk.js",
+    "userServiceSdkConfig": {
+      "apiUrl": "https://userservice-api.channel5.com/",
+      "platform": "My5 Web",
+      "env": "prod",
+      "tcfVersion": 1,
+      "consentExpirationTimeInMonths": 13,
+      "maxResumePoints": 20,
+      "maxLocalResumePoints": 20,
+      "maxLocalSearchHistory": 20
+    }
+  },
+  "webpages": {
+    "linkedPage": [
+      {
+        "id": "PLC_My5EditorialNews",
+        "page": "/5-news"
+      }
+    ],
+    "metadata": [
+      {
+        "id": "PLC_My5DesktopHomePageSubNav",
+        "page": "/",
+        "title": "My5 TV - Watch Live TV, Stream Episodes, Films and more",
+        "description": "Welcome to My5, where you can catch up and stream box sets of your favourite shows from Channel 5, 5STAR, 5USA, 5SELECT, 5ACTION and more."
+      },
+      {
+        "id": "PLC_MilkshakeDesktopHomePageSubNav",
+        "page": "/",
+        "title": "Milkshake TV - Filtered Milkshake content",
+        "description": "Welcome to Milkshake."
+      },
+      {
+        "id": "PLC_My5FavouritesNav",
+        "page": "/mylist",
+        "title": "My5 - My favourite video contents",
+        "description": "Save your favourite shows to My List to enjoy watching later on My5."
+      },
+      {
+        "id": "PLC_My5DesktopLiveTVSubNav",
+        "page": "/channels/{live_tv_channel}",
+        "title": "My5 live TV - {live_tv_channel}",
+        "description": "Watch {live_tv_channel} live or catch up on your favourite {live_tv_channel} shows on My5."
+      },
+      {
+        "id": "PLC_My5DesktopBrowseSubNav",
+        "page": "/browse/{category_or_channel}",
+        "title": "My5 browse - {category_or_channel}",
+        "description": "Browse the {tv_channel} channel for available TV programmes to watch on My5."
+      }
+    ]
+  },
+  "footer": {
+    "links": [
+      {
+        "title": "Programme Information",
+        "url": "https://www.channel5.com/information",
+        "external": true
+      },
+      {
+        "title": "5News",
+        "url": "/5-news",
+        "external": true
+      },
+      {
+        "title": "Competitions",
+        "url": "/win",
+        "external": false
+      },
+      {
+        "title": "Take Part",
+        "url": "https://www.channel5.com/take-part",
+        "external": true
+      },
+      {
+        "title": "Help",
+        "url": "https://help.channel5.com/hc/en-gb",
+        "external": true
+      },
+      {
+        "title": "FAQ's",
+        "url": "https://faqs.channel5.com/hc/en-us/",
+        "external": true
+      },
+      {
+        "title": "Accessibility",
+        "url": "/accessibility/",
+        "external": true
+      }
+    ],
+    "corporateLinks": [
+      {
+        "title": "Corporate",
+        "url": "https://www.viacomcbs-mediahub.co.uk/corporate/",
+        "external": true
+      },
+      {
+        "title": "Advertising",
+        "url": "https://www.skymedia.co.uk/channels/channel-5/",
+        "external": true
+      },
+      {
+        "title": "Community Guidelines",
+        "url": "/community-guidelines/",
+        "external": true
+      },
+      {
+        "title": "Anti Slavery",
+        "url": "https://www.channel5.com/viacom-statement-countering-slavery-human-trafficking",
+        "external": true
+      },
+      {
+        "title": "Terms of Use",
+        "url": "/terms-of-use/",
+        "external": true
+      },
+      {
+        "title": "Terms & Conditions",
+        "url": "/terms-conditions/",
+        "external": true
+      },
+      {
+        "title": "Privacy Policy",
+        "url": "https://privacy.paramount.com/en/policy",
+        "external": true
+      },
+      {
+        "title": "Children's Privacy Policy",
+        "url": "https://privacy.paramount.com/childrens-short",
+        "external": true
+      }
+    ],
+    "brandLinks": [
+      {
+        "title": "Milkshake",
+        "url": "https://www.milkshake.tv/",
+        "external": true,
+        "imgUrl": ""
+      }
+    ],
+    "social": [
+      {
+        "title": "Facebook",
+        "url": "https://www.facebook.com/channel5uk",
+        "external": false
+      },
+      {
+        "title": "Twitter",
+        "url": "https://twitter.com/channel5_tv",
+        "external": false
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/user/demandfive",
+        "external": false
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/channel5_tv/",
+        "external": false
+      }
+    ],
+    "copyright": "Channel 5 Broadcasting Ltd 2025"
+  },
+  "auxiliaryurls": {
+    "signin": [
+      {
+        "title": "Privacy Policy",
+        "url": "https://privacy.paramount.com/policy",
+        "external": true
+      }
+    ],
+    "register": [
+      {
+        "title": "Privacy Policy",
+        "url": "https://privacy.paramount.com/policy",
+        "external": true
+      }
+    ],
+    "competitions": [
+      {
+        "title": "Winners",
+        "url": "/win/competition-winners",
+        "external": false
+      },
+      {
+        "title": "Terms & Conditions",
+        "url": "/win/competitions-terms-and-conditions",
+        "external": false
+      },
+      {
+        "title": "Privacy Policy",
+        "url": "/win/privacy-policy",
+        "external": false
+      },
+      {
+        "title": "Customer Care",
+        "url": "/customercare",
+        "external": true
+      }
+    ]
+  },
+  "sponsorship": {
+    "DFPNetworkID": "20346936",
+    "DFPSiteID": "channel5"
+  },
+  "c5playerSettings": {
+    "coreUrl": "https://player.akamaized.net/html5player/core/html5-c5-player.js",
+    "themeUrl": "https://player.akamaized.net/html5player/theme/my5/html5-my5.css",
+    "theme": "my5",
+    "tealiumUrl": "https://tags.tiqcdn.com/utag/cbsi/my5-legacy/prod/utag.js",
+    "fairplayApplicationCertificateUrl": "https://c5apps.channel5.com/fps/c5-fps-app-cert-20170119.cer",
+    "widevineApplicationCertificateUrl": "https://c5apps.channel5.com/wv/c5-wv-app-cert-20170524.bin",
+    "cassieBaseUrl": "https://cassie.channel5.com/api/v2",
+    "cassieBaseVODUrl": "https://cassie.channel5.com/api/v2/media",
+    "cassieBaseLiveUrl": "https://cassie.channel5.com/api/v2/live_media",
+    "cassiePlatformId": "my5desktopng",
+    "coronaBaseUri": "https://corona.channel5.com/channels",
+    "startAgain": false,
+    "cassieChromecastPlatformId": "gccdesktopng",
+    "autoplay": "true",
+    "licenceRefreshTimeMins": 170,
+    "adSettings": {
+      "server": "https://7f077.v.fwmrm.net/",
+      "siteSection": {
+        "id": "intllocal_my5_uk_desktop_web_vod"
+      },
+      "profile": "520311:my5_web_video",
+      "networkId": "520311",
+      "crtp": "vast3ap",
+      "metr": "959",
+      "_fw_h_x_country": "GB",
+      "flag": "+emcr+exvt+sltp+slcb+fbad"
+    },
+    "nearEndEventTime": 10,
+    "kantarSettings": {
+      "siteName": "c5dotcom",
+      "playerName": "my5",
+      "secure": "true"
+    },
+    "ChromecastSettings": {
+      "lastCastTimeout": 5,
+      "chromecastAppId": "3D07CC58",
+      "enable": "false"
+    },
+    "youboraSettings": {
+      "accountCode": "channel5",
+      "httpSecure": "true",
+      "obfuscateIp": "true",
+      "contentIdKey": "param2",
+      "extraparam.1": "my5_desktop"
+    }
+  },
+  "aspects": {
+    "mixmups": {
+      "mixmups-series": {
+        "buttons": [
+          {
+            "url": "https://www.channel5.com/show/mixmups-visually-signed-3f1ecd7f-a25c-4130-8832-1d2690e1ed7e",
+            "title": "Visually Signed"
+          },
+          {
+            "url": "https://www.channel5.com/mixmups-ultra-access-episodes",
+            "title": "Ultra Access Episodes"
+          }
+        ]
+      },
+      "mixmups-visually-signed": {
+        "buttons": [
+          {
+            "url": "https://www.channel5.com/mixmups-ultra-access-episodes",
+            "title": "Ultra Access Episodes"
+          }
+        ]
+      }
+    }
+  },
+  "_configName": "Fast | Rebrand | Kids Mode"
+}

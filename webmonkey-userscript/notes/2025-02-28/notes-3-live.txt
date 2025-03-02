@@ -1,0 +1,196 @@
+--------------------------------------------------------------------------------
+
+https://www.channel5.com/
+
+https://www.channel5.com/channels/channel-5
+
+-------------------------------------------------------------------------------- after login:
+
+request:
+========
+
+curl 'https://feeds-api.channel5.com/collections/PLC_My5FASTLiveTVPageSubNav/concise.json?vod_available=my5desktop&friendly=1'
+
+response:
+=========
+./data/3-live/api-responses/1-feeds-api-live-tv.json
+
+highlights:
+===========
+console.log(
+  JSON.stringify(
+    data.filters.contents
+      .filter(channel => !!channel && channel.live && channel.channel && channel.title)
+      .map(channel => ({id: channel.channel, name: channel.title}))
+    , null, 2
+  )
+)
+
+output:
+=======
+[
+  {
+    "id": "C5",
+    "name": "Channel 5"
+  },
+  {
+    "id": "C7",
+    "name": "5USA"
+  },
+  {
+    "id": "C6",
+    "name": "5STAR"
+  },
+  {
+    "id": "C0",
+    "name": "5ACTION"
+  },
+  {
+    "id": "C8",
+    "name": "5Select"
+  },
+  {
+    "id": "C5CH01",
+    "name": "5 Cops"
+  },
+  {
+    "id": "C5CH02",
+    "name": "Police Interceptors"
+  },
+  {
+    "id": "C5CH03",
+    "name": "Trucking Hell"
+  },
+  {
+    "id": "C5CH10",
+    "name": "5 Crime"
+  },
+  {
+    "id": "C5CH07",
+    "name": "A&E"
+  },
+  {
+    "id": "C5CH04",
+    "name": "GP's Behind Closed Doors"
+  },
+  {
+    "id": "C5CH06",
+    "name": "Yorkshire Vet"
+  },
+  {
+    "id": "C5CH05",
+    "name": "Bargain Loving Brits"
+  },
+  {
+    "id": "C5CH08",
+    "name": "5 Dogs Behaving Badly"
+  },
+  {
+    "id": "C5CH09",
+    "name": "5 History"
+  },
+  {
+    "id": "C5CH12",
+    "name": "Catfish"
+  },
+  {
+    "id": "C5CH15",
+    "name": "Geordie Shore"
+  },
+  {
+    "id": "C5CH14",
+    "name": "MTV Reality"
+  },
+  {
+    "id": "C5CH13",
+    "name": "Teen Mom"
+  },
+  {
+    "id": "C5CH11",
+    "name": "Milkshake"
+  }
+]
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://feeds-api.channel5.com/feed/now-next/C5.json'
+
+response:
+=========
+./data/3-live/api-responses/2-feeds-api-live-tv-channel-C5.json
+
+--------------------------------------------------------------------------------
+
+request:
+========
+
+curl 'https://corona.channel5.com/channels/C5/epg.json?start=2025-03-02T07%3A00%3A00.000Z&end=2025-03-03T07%3A00%3A00.000Z&platform=my5desktop'
+
+response:
+=========
+./data/3-live/api-responses/3-feeds-api-live-tv-channel-C5-epg.json
+
+notes:
+======
+* decodeURIComponent('2025-03-02T07%3A00%3A00.000Z')
+    => '2025-03-02T07:00:00.000Z'
+* decodeURIComponent('2025-03-03T07%3A00%3A00.000Z')
+    => '2025-03-03T07:00:00.000Z'
+* range = 24 hours
+* (new Date()).toISOString()
+    => '2025-03-02T09:52:57.762Z'
+
+previous half-hour time increment:
+==================================
+
+const get_iso_timestamp_at_previous_half_hour_increment = function() {
+  const iso_now  = (new Date()).toISOString()
+  const iso_ymdh = iso_now.substring( 0, 14)
+  const iso_mins = iso_now.substring(14, 16)
+
+  const iso_timestamp = `${iso_ymdh}${ (parseInt(iso_mins, 10) >= 30) ? '30' : '00' }:00.000Z`
+  return iso_timestamp
+}
+
+const get_iso_timestamp_for_date_with_offset = function(date, days, hours, minutes, seconds) {
+  let offset_ms = 0
+  offset_ms += seconds ? (seconds             * 1000) : 0
+  offset_ms += minutes ? (minutes        * 60 * 1000) : 0
+  offset_ms += hours   ? (hours     * 60 * 60 * 1000) : 0
+  offset_ms += days    ? (days * 24 * 60 * 60 * 1000) : 0
+
+  date = new Date(date)
+  date = date.getTime()
+  date += offset_ms
+  date = new Date(date)
+
+  return date.toISOString()
+}
+
+const get_iso_range_querystring = function() {
+  const iso_timestamp_start = get_iso_timestamp_at_previous_half_hour_increment()
+  const iso_timestamp_end   = get_iso_timestamp_for_date_with_offset(iso_timestamp_start, 1, 0, 0, 0)
+
+  const querystring = `start=${ encodeURIComponent(iso_timestamp_start) }&end=${ encodeURIComponent(iso_timestamp_end) }`
+  return querystring
+}
+
+const print_iso_range = function() {
+  const iso_timestamp_start = get_iso_timestamp_at_previous_half_hour_increment()
+  const iso_timestamp_end   = get_iso_timestamp_for_date_with_offset(iso_timestamp_start, 1, 0, 0, 0)
+
+  console.log(iso_timestamp_start, '=>', iso_timestamp_end)
+  console.log(get_iso_range_querystring())
+}
+
+print_iso_range()
+
+output:
+=======
+2025-03-02T09:30:00.000Z => 2025-03-03T09:30:00.000Z
+start=2025-03-02T09%3A30%3A00.000Z&end=2025-03-03T09%3A30%3A00.000Z
+
+--------------------------------------------------------------------------------

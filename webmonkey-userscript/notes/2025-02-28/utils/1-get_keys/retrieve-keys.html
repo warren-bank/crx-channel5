@@ -1,0 +1,45 @@
+<head>
+  <script>
+  //const player_js = 'https://player.akamaized.net/html5player/core/html5-c5-player.js'
+    const player_js = 'js/html5-c5-player.js'
+
+    const execute_script = (js_code) => {
+      const s = document.createElement('script')
+      s.textContent = js_code
+      document.body.appendChild(s)
+    }
+
+    const process_script = (js_code) => {
+      const keys = get_keys(js_code)
+      output_keys(keys)
+    }
+
+    const get_keys = (js_code) => {
+      const dfnm = /\x72\x65\x74\x75\x72\x6e\x20\x74\x79\x70\x65\x6f\x66\x20([a-z0-9]+)\[(\d+)\]\.([a-z0-9]+)\x20\x3d\x3d\x3d\x20\x27\x66\x75\x6e\x63\x74\x69\x6f\x6e\x27/gi.exec(js_code);
+      const krm = /\x27\\x68\x27:[a-z0-9]+\.[a-z0-9]+\((\d+)\),'\\x61':[a-z0-9]+\.[a-z0-9]+\((\d+)\)/gi.exec(js_code);
+      const HMAC_SECRET = window[dfnm[1]][dfnm[2]][dfnm[3]](krm[1])
+      const AES_KEY = window[dfnm[1]][dfnm[2]][dfnm[3]](krm[2])
+
+      return {HMAC_SECRET, AES_KEY}
+    }
+
+    const output_keys = (keys) => {
+      const serialized_keys = JSON.stringify(keys, null, 2)
+
+      console.log(serialized_keys)
+
+      const pre = document.createElement('pre')
+      pre.textContent = serialized_keys
+      document.body.appendChild(pre)
+    }
+
+    const init = () => {
+      fetch(player_js).then(res => res.text()).then(js_code => {
+        execute_script(js_code)
+        process_script(js_code)
+      })
+    }
+
+    document.addEventListener('DOMContentLoaded', init)
+  </script>
+</head>
