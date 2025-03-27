@@ -45,6 +45,23 @@ Its purpose is to:
       - summary
     * _Get Video URL_ button to obtain the URL for its video
 
+### IMPORTANT:
+
+* this userscript includes the resource: [`C5_PLAYER_JS`](https://player.akamaized.net/html5player/core/html5-c5-player.js)
+* this resource serves as a local cache for a very large remote file,<br>
+  so downloading isn't performed for every page load
+* when this resource is updated on the server, the userscript will:
+  - succeed to list episodes in series
+  - fail to obtain video stream URLs;<br>
+    the server will respond:
+    ```js
+      {"code":"4003","message":"Failed to authenticate HMAC request"}
+    ```
+* many userscript managers allow resources to be manually refreshed,<br>
+  which will periodically be necessary to restore functionality
+* for userscript managers that don't have this feature,<br>
+  uninstalling and then reinstalling this userscript will have the same result
+
 #### Notes:
 
 * to access the data API endoint and video stream hosts:

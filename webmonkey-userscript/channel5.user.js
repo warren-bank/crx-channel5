@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         channel5
 // @description  Improve site usability. Watch videos in external player.
-// @version      1.0.1
+// @version      1.0.2
 // @match        *://*.channel5.com/*
 // @icon         https://www.channel5.com/favicon.ico
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js
 // @require      https://cdn.jsdelivr.net/gh/ricmoo/aes-js@3.1.2/index.js
-// @resource     C5_PLAYER_JS     notes/2025-02-28/utils/1-get_keys/js/html5-c5-player.js
+// @resource     C5_PLAYER_JS     https://player.akamaized.net/html5player/core/html5-c5-player.js
 // @run-at       document-end
 // @grant        unsafeWindow
 // @grant        GM_getResourceText
